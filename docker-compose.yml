@@ -1,0 +1,8 @@
+services:
+  orders-service:
+    build: .
+    container_name: orders-service
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./src/main/resources/application.properties:/app/src/main/resources/application.properties
